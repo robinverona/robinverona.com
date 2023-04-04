@@ -1,0 +1,275 @@
+
+/* --------------------- VARIABLES -------------------- */
+
+/* Breakpoints */
+$screen-sm-min: 100px;
+$screen-sm-max: 640px;
+$screen-md-min: 768px;
+$screen-lg-min: 1024px;
+$screen-xl-min: 1280px;
+$screen-2xl-min: 1536px;
+
+/* Colors */
+$dark: hsl(225, 7%, 12%);
+$light: hsl(222, 100%, 98%);
+$primary-background-color: $light;
+$secondary-background-color: $dark;
+// Temporary color for testing
+$primary-text-color: $dark;
+$secondary-text-color : $light;
+
+
+// TODO: Investigate why this is not working
+// $primary-text-color: dynamic-color(primary-background-color);
+// $secondary-text-color : dynamic-color(secondary-background-color);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+// $sans: 'Inter', sans-serif;
+$sans: 'inter', sans-serif;
+//  $serif: 'Georgia, serif';
+
+
+/* --------------------- MIXINS -------------------- */
+
+/* Media queries */
+
+@mixin for-phone-only {
+    @media (max-width: $screen-sm-max) {
+        @content;
+    }
+}
+
+@mixin for-tablet-portrait-up {
+    @media (min-width: $screen-sm-max) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-up {
+    @media (min-width: $screen-md-min) {
+        @content;
+    }
+}
+
+@mixin for-desktop-up {
+    @media (min-width: $screen-lg-min) {
+        @content;
+    }
+}
+
+@mixin for-big-desktop-up {
+    @media (min-width: $screen-2xl-min) {
+        @content;
+    }
+}
+
+/* Typography */
+
+@mixin text-xs {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    // text-transform: capitalize;
+
+    /* identical to box height, or 217% */
+    letter-spacing: -0.03em;
+
+    @include for-phone-only {
+        font-size: 12px;
+        line-height: 26px;
+    }
+}
+
+@mixin text-sm {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.03em;
+    // text-transform: capitalize;
+
+    @include for-phone-only {
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+}
+
+@mixin text-base {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.03em;
+    // text-transform: capitalize;
+
+    @include for-phone-only {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@mixin text-lg {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    // text-transform: capitalize;
+
+    @include for-phone-only {
+        font-size: 24px;
+        line-height: 29.05px;
+    }
+}
+
+@mixin text-xl {
+    font-style: normal;
+    font-size: 64px;
+    line-height: 77px;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    // text-transform: capitalize;
+
+    @include for-phone-only {
+        font-size: 40px;
+        line-height: 48.41px;
+    }
+
+}
+
+/* Utils */
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Spacing */
+
+$spacing-separator: 24px;
+
+$mobile-spacing-xs: 20px;
+$mobile-spacing-sm: 30px;
+$mobile-spacing-reg: 40px;
+$mobile-spacing-lg: 100px;
+$mobile-spacing-xl: 60px;
+$mobile-spacing-2xl: 120px;
+
+$spacing-xs: 40px;
+$spacing-sm: 50px;
+$spacing-reg: 80px;
+$spacing-lg: 100px;
+$spacing-xl: 120px;
+$spacing-2xl: 200px;
+
+/* --------------------- FUNCTIONS -------------------- */
+
+/* Typography */
+
+// dynamic color function declaration
+@function dynamic-color($color) {
+    $font-color: $black;
+
+    @if (lightness($color) > 50%) {
+        $font-color: $dark;
+    }
+
+    @else {
+        $font-color: $light;
+    }
+
+    @return $font-color;
+}
+
+/* --------------------- ROOT -------------------- */
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+/* --------------------- GLOBAL -------------------- */
+#app {
+    margin: 0 24px;
+    @include for-tablet-portrait-up {
+        margin: 0 100px;
+        overflow: auto;
+    }
+}
+
+html {
+    width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: $sans;
+}
+
+// Responsive images
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-text-color;
+    transition: opacity 0.4s ease-in-out;
+    &:hover {
+        // opacity: 0.75;
+    }
+}
+
+
+
+h1 {
+    @include text-xl;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    @include for-tablet-portrait-up {
+        margin-top: 200px;
+        margin-bottom: 120px;
+
+    }
+
+}
+
+// .logo {
+//     font-family: 'Stanley';
+//     font-weight: normal;
+//     font-style: normal;
+//     @include text-xl;
+//     letter-spacing: .2rem;
+// }
+
+/* [1] The container */
+.img-hover-zoom {
+    height: auto; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.1);
+  }

@@ -1,0 +1,85 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+
+    @include for-tablet-portrait-up {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        overflow: hidden;
+        margin-top: 200px;
+        margin-bottom: 100px;
+
+    }
+}
+
+.footer__list {
+    width: 100%;
+    @include reset-list;
+
+    @include for-tablet-portrait-up {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column;
+    text-transform: lowercase;
+    @include text-lg;
+
+    @include for-tablet-portrait-up {
+        &.align-right * {
+            text-align: right;
+        }
+    }
+}
+
+.footer__separator {
+    @include for-phone-only {
+        display: none;
+    }
+    @include for-tablet-portrait-up {
+        width: 100%;
+        border-bottom: $dark solid 1px;
+        position: absolute;
+        top: 35px; // TODO: fix this position when the footer is done (spacings)
+    }
+}
+
+.footer__item:last-child {
+    margin-top: 40px;
+    @include for-tablet-portrait-up {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+.footer__label {
+    @include text-xs;
+    text-transform: uppercase;
+    border-bottom: $primary-text-color 1px solid;
+    padding-bottom: $spacing-separator;
+
+    @include for-tablet-portrait-up {
+        border-bottom: none;
+    }
+
+
+}
+
+.footer__link {
+    margin-top: $spacing-separator;
+    @include for-tablet-portrait-up {
+        margin-top: 40px;
+    }
+}

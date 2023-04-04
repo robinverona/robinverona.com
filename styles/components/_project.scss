@@ -1,0 +1,78 @@
+
+
+@include for-tablet-landscape-up {
+    .project h1 {
+        margin-bottom: 80px;
+    }
+}
+
+
+.project__overview {
+    display: flex;
+    flex-direction: column;
+    @include for-tablet-landscape-up {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 80px;
+
+    }
+}
+
+.project__overview h2 {
+    @include text-xs;
+    text-transform: uppercase;
+    border-bottom: $primary-text-color 1px solid;
+
+
+}
+
+.project__pitch, .project__context, .project__skillset {
+    flex-grow: 1;
+    margin-bottom: 50px;
+    @include for-tablet-landscape-up {
+        width: 24rem;
+        margin: 0 40px; 
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    & h2 {
+        padding-bottom: 20px;
+        margin: 0;
+
+        @include for-tablet-landscape-up {
+            margin: 40px 0;
+        }
+    }
+
+    & p {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.skillset__list {
+    @include reset-list;
+    list-style: none;
+
+    & .skillset__item {
+        display: inline;
+    }
+}
+
+.project__gallery {
+    column-gap: $spacing-separator;
+    column-fill: initial;
+    column-count: 1;
+}
+
+.project-gallery__item {
+    width: 100%;
+}

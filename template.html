@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body data-barba="wrapper">
+    <div id="app" data-barba="container" data-barba-namespace="template">
+        <!-- Mobile menu sidebar start -->
+        <nav class="sidebar sidebar--hidden">
+
+            <header class="sidebar-main-header sidebar-header">
+                <a href="index.html" class="sidebar-header__brand">Freelancer</a>
+                <a id="sidebar-header__button--close" href="javascript:void(0)"
+                    class="sidebar-button  sidebar__button">Fermer</a>
+            </header>
+
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="index.html" class="sidebar__link">Accueil</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="about.html" class="sidebar__link">A propos</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="projects.html" class="sidebar__link">Projects</a>
+                </li>
+            </ul>
+            <footer class="sidebar-footer">
+                <ul class="sidebar-footer__list">
+                    <li class="sidebar-footer__item">
+                        <span class="sidebar-footer__label">Email</span>
+                        <a href="javascript:void(0)" class="sidebar-footer__link">robin.verona@edu.gobelins.fr</a>
+                    </li>
+                    <li class="sidebar-footer__item">
+                        <span class="sidebar-footer__label">Réseaux sociaux</span>
+                        <a href="javascript:void(0)" class="sidebar-footer__link">GitHub</a>
+                    </li>
+                </ul>
+            </footer>
+        </nav>
+        <!-- Mobile menu sidebar end -->
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <a href="index.html" class="navbar__brand">Freelancer</a>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__link">Portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__link">A propos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+            <a id="sidebar__button--open" href="javascript:void(0)" class="sidebar__button">Menu</a>
+        </header>
+        <!-- Navbar end -->
+        <!-- Curated projects start -->
+        <!-- <section class="curated-projects">
+            <h1 class="curated-project__title">
+                Curated projects
+            </h1>
+            <ul class="curated-projects__list">
+                <li class="curated-projects__item">
+                    <a href="#" class="curated-projects__link">
+                        <img src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')" alt="Placeholder" class="curated-projects__image">
+                        <div class="curated-projects__overlay">
+                            <h2 class="curated-projects__overlay-title">Project 1</h2>
+                            <p class="curated-projects__overlay-description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam, quae.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="curated-projects__item">
+                    <a href="#" class="curated-projects__link">
+                        <img src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')" alt="Placeholder" class="curated-projects__image">
+                        <div class="curated-projects__overlay">
+                            <h2 class="curated-projects__overlay-title">Project 2</h2>
+                            <p class="curated-projects__overlay-description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam, quae.</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="curated-projects__item">
+                    <a href="#" class="curated-projects__link">
+                        <img src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')" alt="Placeholder" class="curated-projects__image">
+                        <div class="curated-projects__overlay">
+                            <h2 class="curated-projects__overlay-title">Project 3</h2>
+                            <p class="curated-projects__overlay-description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam, quae.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section> -->
+        <!-- Curated projects end -->
+        <!-- Footer start -->
+        <footer id="contact" class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__label">Email</span>
+                    <a href="javascript:void(0)" class="footer__link">Email me</a>
+                </li>
+                <li class="footer__separator"></li>
+                <li class="footer__item align-right">
+                    <span class="footer__label">Réseaux sociaux</span>
+                    <a href="javascript:void(0)" class="footer__link">GitHub <i>&#8599;</i></a>
+                    <a href="javascript:void(0)" class="footer__link">LinkedIn <i>&#8599;</i></a>
+
+                </li>
+            </ul>
+        </footer>
+        <!-- Footer end -->
+    </div>
+    <script src="js/app.js" type="module"></script>
+
+</body>
+
+</html>

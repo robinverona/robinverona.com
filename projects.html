@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All works - Freelancer Portfolio</title>
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body data-barba="wrapper">
+    <div id="app" data-barba="container" data-barba-namespace="portfolio">    
+        <!-- Mobile menu sidebar start -->
+        <nav class="sidebar sidebar--hidden">
+
+            <header class="sidebar-main-header sidebar-header">
+                <a href="index.html" class="sidebar-header__brand">Freelancer</a>
+                <a id="sidebar-header__button--close" href="javascript:void(0)"
+                    class="sidebar-button  sidebar__button">Fermer</a>
+            </header>
+
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="index.html" class="sidebar__link">Accueil</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="about.html" class="sidebar__link">A propos</a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="projects.html" class="sidebar__link">Projects</a>
+                </li>
+            </ul>
+            <footer class="sidebar-footer">
+                <ul class="sidebar-footer__list">
+                    <li class="sidebar-footer__item">
+                        <span class="sidebar-footer__label">Email</span>
+                        <a href="javascript:void(0)" class="sidebar-footer__link">robin.verona@edu.gobelins.fr</a>
+                    </li>
+                    <li class="sidebar-footer__item">
+                        <span class="sidebar-footer__label">Réseaux sociaux</span>
+                        <a href="javascript:void(0)" class="sidebar-footer__link">GitHub</a>
+                    </li>
+                </ul>
+            </footer>
+        </nav>
+        <!-- Mobile menu sidebar end -->
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <a href="index.html" class="navbar__brand">Robin Verona</a>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__link">Portfolio</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="about.html" class="navbar__link">A propos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+            <a id="sidebar__button--open" href="javascript:void(0)" class="sidebar__button">Menu</a>
+        </header>
+        <!-- Navbar end -->
+        <!-- Mobile portfolio start -->
+            <section class="mobile-portfolio">
+                <h1>
+                    Portfolio
+                </h1>
+                <ul class="mobile-portfolio__list">
+                    <li class="mobile-portfolio__item">
+                        <a href="example-project.html" class="mobile-portfolio__link">
+                            <img src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')"
+                                alt="Placeholder" class="mobile-portfolio__image">
+                            <div class="mobile-portfolio__overlay">
+                                <h2 class="mobile-portfolio__overlay-title">Project 1</h2>
+                                <div class="mobile-portfolio__overlay-infos">
+                                    <span>Skills</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mobile-portfolio__item">
+                        <a href="example-project.html" class="mobile-portfolio__link">
+                            <img src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')"
+                                alt="Placeholder" class="mobile-portfolio__image">
+                            <div class="mobile-portfolio__overlay">
+                                <h2 class="mobile-portfolio__overlay-title">Project 2</h2>
+                                <div class="mobile-portfolio__overlay-infos">
+                                    <span>Skills</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mobile-portfolio__item">
+                        <a href="example-project.html" class="mobile-portfolio__link">
+                            <img src="https://images.unsplash.com/photo-1583585635793-0e1894c169bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=913&q=80')"
+                                alt="Placeholder" class="mobile-portfolio__image">
+                            <div class="mobile-portfolio__overlay">
+                                <h2 class="mobile-portfolio__overlay-title">Project 3</h2>
+                                <div class="mobile-portfolio__overlay-infos">
+                                    <span>Skills</span>
+                                    <span>2022</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Mobile portfolio end -->
+            <!-- Desktop portfolio start -->
+            <section class="desktop-portfolio">
+                <h1>
+                    Portfolio
+                </h1>
+                <table class="desktop-portfolio__table">
+                    <tr class="desktop-portfolio__table-row">
+                        <th class="desktop-portfolio__label">Titre</th>
+                        <th class="desktop-portfolio__label">Client</th>
+                        <th class="desktop-portfolio__label">Compétences</th>
+                        <th class="desktop-portfolio__label">Année</th>
+                    </tr>
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Plateforme Make.org</a>
+                        </td>
+                        <td>Make.org</td>
+                        <td>React.js, TypeScript Jest, Cypress, Design System</td>
+                        <td>2023</td>
+                    </tr>
+                    
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Attack on Big T</a>
+                        </td>
+                        <td>Projet scolaire</td>
+                        <td>JavaScript, Phaser, Game design</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Click Clack</a>
+                        </td>
+                        <td>Projet scolaire</td>
+                        <td>Vue.js, JavaScript, WebSockets, Game Design, Narrative Design</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Sonolithe</a>
+                        </td>
+                        <td>Projet scolaire</td>
+                        <td>Unity, C#, Game Design</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Zero to infinity</a>
+                        </td>
+                        <td>Projet personnel</td>
+                        <td>JavaScript, Art génératif, Canvas</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Rap ou Poésie</a>
+                        </td>
+                        <td>Projet personnel</td>
+                        <td>JavaScript, UX Design</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr class="desktop-portfolio__item">
+                        <td class="desktop-portfolio__title">
+                            <a href="example-project.html">Matrice.io</a>
+                        </td>
+                        <td>Matrice</td>
+                        <td>Ruby on rails, JavaScript, Intégration</td>
+                        <td>2019</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        
+        <!-- Desktop portfolio end -->
+        <!-- Footer start -->
+        <footer id="contact" class="footer">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <span class="footer__label">Email</span>
+                    <a href="javascript:void(0)" class="footer__link">Email me</a>
+                </li>
+                <li class="footer__separator"></li>
+                <li class="footer__item align-right">
+                    <span class="footer__label">Réseaux sociaux</span>
+                    <a href="javascript:void(0)" class="footer__link">GitHub <i>&#8599;</i></a>
+                    <a href="javascript:void(0)" class="footer__link">LinkedIn <i>&#8599;</i></a>
+
+                </li>
+            </ul>
+        </footer>
+        <!-- Footer end -->
+        </div>
+    <!-- </main> -->
+    <script src="js/app.js" type="module"></script>
+
+</body>
+
+</html>

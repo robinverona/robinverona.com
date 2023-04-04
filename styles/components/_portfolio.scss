@@ -1,0 +1,142 @@
+.mobile-portfolio {
+    @include for-phone-only {
+        display: block;
+    }
+    @include for-tablet-landscape-up {
+        display: none;
+    }
+}
+
+.mobile-portfolio__list {
+    column-gap: 40px;
+    column-fill: initial;
+    column-count: 1;
+    @include reset-list;
+    @include for-tablet-landscape-up {
+        column-count: 2;
+    }
+}
+
+.mobile-portfolio__item {
+    display: inline-block; /* Fix the misalignment of items */
+    vertical-align: top; /* Keep the item on the very top */
+    margin: 40px 0;
+}
+
+.mobile-portfolio__image {
+    backface-visibility: hidden; /* Remove Image flickering on hover */
+}
+
+.mobile-portfolio__overlay-title {
+    border-bottom: $primary-text-color 1px solid;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.mobile-portfolio__overlay-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include text-base;
+    padding-top: 20px;
+    margin: 0;
+
+    @include for-tablet-landscape-up {
+        padding-top: 40px;
+        margin: 0;
+    }
+}
+
+
+.desktop-portfolio {
+    @include for-phone-only {
+        display: none;
+    }
+    @include for-tablet-landscape-up {
+        display: block;
+    }
+}
+
+.desktop-portfolio__table {
+    border-collapse: collapse;
+    width: 100%;
+    position: relative;
+}
+
+.desktop-portfolio__label {
+    @include text-xs;
+    border-top: none!important;
+    text-transform: uppercase;
+    @include for-tablet-landscape-up {
+        padding-bottom: 20px;
+    }
+}
+
+.desktop-portfolio td, .desktop-portfolio th {
+    border-top: 1px solid $dark;
+    text-align: left;
+    // position: relative;
+    @include for-tablet-landscape-up {
+        padding: 50px 0;
+    }
+}
+
+.desktop-portfolio__item {
+    position: relative;
+    flex: 1;
+}
+
+
+.desktop-portfolio__title {
+    @include text-lg;
+    border-top: 1px solid $dark;
+    // @include for-tablet-landscape-up {
+    // & a {
+    //     position: relative;
+    //     display: inline-block; 
+    //     top: 50%;   
+    //     border: red solid 1px;
+    //     // transform: translateY(-50%);
+    //     mix-blend-mode: difference;
+    // }
+
+    // }
+
+
+}
+
+// .one {
+//     background-image: url(../../assets/images/projects/makeorg_details1.svg);
+// }
+// .hover-reveal {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 400px;
+//     height: 500px;
+//     opacity: 0;
+//     pointer-events: none;
+//     transform: translate(0, -400px);
+//     transition: 0.2s ease-out;
+// }
+
+// .hover-reveal__inner {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     will-change: transform;
+//     overflow: hidden;
+// }
+
+// .hover-reveal__img {
+//     background-size: cover;
+//     background-position: 50% 50%;
+//     transform-origin: 50% 100%;
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     will-change: transform;
+//     transform: scale(0.8, 0.8);
+//     transition: 1.5s transform; 
+// }
