@@ -66,6 +66,7 @@
 
 .desktop-portfolio__label {
     @include text-xs;
+    color: #656565;
     border-top: none!important;
     text-transform: uppercase;
     @include for-tablet-landscape-up {
@@ -74,7 +75,7 @@
 }
 
 .desktop-portfolio td, .desktop-portfolio th {
-    border-top: 1px solid $dark;
+    border-top: 1px solid #DCDCDC;
     text-align: left;
     // position: relative;
     @include for-tablet-landscape-up {
@@ -90,21 +91,34 @@
 
 .desktop-portfolio__title {
     @include text-lg;
-    border-top: 1px solid $dark;
+    border-top: 1px solid #DCDCDC;
     // @include for-tablet-landscape-up {
     // & a {
     //     position: relative;
-    //     display: inline-block; 
-    //     top: 50%;   
+    //     display: block; 
+    //     // top: 50%;   
     //     border: red solid 1px;
     //     // transform: translateY(-50%);
     //     mix-blend-mode: difference;
     // }
-
     // }
-
-
 }
+
+
+// .desktop-portfolio__image {
+//     position: absolute;
+//     width: 300px;
+//     height: 400px;
+//     object-fit: cover;
+//     transform: translateX(-50%) translateY(-50%);
+//     top: 50%;
+//     left: 50%;
+//     z-index: -10;
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+//     border: blue solid 3px;
+// }
 
 // .one {
 //     background-image: url(../../assets/images/projects/makeorg_details1.svg);

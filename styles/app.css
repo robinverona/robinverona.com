@@ -51,11 +51,19 @@ img {
   height: auto;
 }
 
-a {
+a, .navbar__link, .footer__link {
   text-decoration: none;
   color: hsl(225, 7%, 12%);
-  transition: opacity 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+a:hover, .navbar__link:hover, .footer__link:hover {
+  color: black;
+}
+
+.navbar__brand {
+  opacity: 0.5;
+}
+
 h1 {
   font-style: normal;
   font-size: 64px;
@@ -370,7 +378,7 @@ h1 {
 @media (min-width: 640px) {
   .footer__separator {
     width: 100%;
-    border-bottom: hsl(225, 7%, 12%) solid 1px;
+    border-bottom: #DCDCDC solid 1px;
     position: absolute;
     top: 35px;
   }
@@ -394,8 +402,9 @@ h1 {
   /* identical to box height, or 217% */
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  border-bottom: hsl(225, 7%, 12%) 1px solid;
+  border-bottom: #DCDCDC 1px solid;
   padding-bottom: 24px;
+  color: #656565;
 }
 @media (max-width: 640px) {
   .footer__label {
@@ -459,7 +468,7 @@ h1 {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.03em;
-  border-bottom: hsl(225, 7%, 12%) 1px solid;
+  border-bottom: #DCDCDC 1px solid;
   padding-top: 50px;
   padding-bottom: 20px;
   margin: 0;
@@ -697,6 +706,7 @@ h1 {
   line-height: 26px;
   /* identical to box height, or 217% */
   letter-spacing: -0.03em;
+  color: #656565;
   border-top: none !important;
   text-transform: uppercase;
 }
@@ -713,7 +723,7 @@ h1 {
 }
 
 .desktop-portfolio td, .desktop-portfolio th {
-  border-top: 1px solid hsl(225, 7%, 12%);
+  border-top: 1px solid #DCDCDC;
   text-align: left;
 }
 @media (min-width: 768px) {
@@ -733,7 +743,7 @@ h1 {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -0.03em;
-  border-top: 1px solid hsl(225, 7%, 12%);
+  border-top: 1px solid #DCDCDC;
 }
 @media (max-width: 640px) {
   .desktop-portfolio__title {
@@ -799,8 +809,9 @@ h1 {
   /* identical to box height, or 217% */
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  border-bottom: hsl(225, 7%, 12%) 1px solid;
+  border-bottom: #DCDCDC 1px solid;
   padding-bottom: 24px;
+  color: #656565;
 }
 @media (max-width: 640px) {
   .about .details__title, .details__label, .skills__title {
