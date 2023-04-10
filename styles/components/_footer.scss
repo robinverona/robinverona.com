@@ -34,7 +34,7 @@
 .footer__item {
     display: flex;
     flex-direction: column;
-    text-transform: lowercase;
+    // text-transform: lowercase;
     @include text-lg;
 
     @include for-tablet-portrait-up {

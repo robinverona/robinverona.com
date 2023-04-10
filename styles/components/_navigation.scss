@@ -116,6 +116,7 @@
 
 .sidebar-footer {
     width: 100%;
+    padding-bottom: 70px; // fix navbar mobile
 }
 
 .sidebar-footer__list {
@@ -130,7 +131,7 @@
     display: flex;
     flex-direction: column;
     @include text-lg;
-    text-transform: lowercase;
+    // text-transform: lowercase;
     color: $secondary-text-color;
     margin-bottom: 40px;
     &:last-of-type {
