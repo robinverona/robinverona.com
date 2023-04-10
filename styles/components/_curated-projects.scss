@@ -1,3 +1,19 @@
+.intro {
+    // border: blue solid 1px;
+    margin-top: $spacing-lg;
+
+}
+
+.intro__link {
+    text-decoration: underline;
+}
+.intro__text {
+    @include text-lg;
+    @include for-tablet-portrait-up {
+        max-width: 600px;
+    }
+}
+
 .curated-projects__list {
     column-gap: $spacing-separator;
     column-fill: initial;

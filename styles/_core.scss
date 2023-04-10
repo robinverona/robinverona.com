@@ -242,7 +242,6 @@ a, .navbar__link, .footer__link {
 }
 
 
-
 h1 {
     @include text-xl;
     margin-top: 120px;
@@ -254,6 +253,12 @@ h1 {
     }
 
 }
+
+h1.curated-project__title {
+    margin-top: 110px;
+
+}
+
 
 // .logo {
 //     font-family: 'Stanley';
