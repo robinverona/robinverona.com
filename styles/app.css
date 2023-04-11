@@ -180,7 +180,7 @@ h1.curated-project__title {
   }
 }
 .sidebar--open {
-  height: 100vh;
+  height: 100%;
   height: -webkit-fill-available;
   height: fill-available;
   width: 100%;
@@ -257,7 +257,6 @@ h1.curated-project__title {
 
 .sidebar-footer {
   width: 100%;
-  padding-bottom: 70px;
 }
 
 .sidebar-footer__list {
@@ -453,7 +452,7 @@ h1.curated-project__title {
 }
 @media (min-width: 640px) {
   .intro__text {
-    max-width: 600px;
+    max-width: 800px;
   }
 }
 
@@ -797,6 +796,7 @@ h1.curated-project__title {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px 0;
 }
 @media (min-width: 640px) {
   .about__item {

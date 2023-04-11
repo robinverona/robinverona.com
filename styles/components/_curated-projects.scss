@@ -10,7 +10,7 @@
 .intro__text {
     @include text-lg;
     @include for-tablet-portrait-up {
-        max-width: 600px;
+        max-width: 800px;
     }
 }
 

@@ -61,7 +61,7 @@
         display: none;
     }
     &--open {
-        height: 100vh;
+        height: 100%;
         height: -webkit-fill-available;
         height: fill-available;
         width: 100%;
@@ -116,7 +116,7 @@
 
 .sidebar-footer {
     width: 100%;
-    padding-bottom: 70px; // fix navbar mobile
+    // padding-bottom: 70px; // fix navbar mobile
 }
 
 .sidebar-footer__list {
