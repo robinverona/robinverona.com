@@ -230,15 +230,6 @@ img {
 a, .navbar__link, .footer__link {
     text-decoration: none;
     color: $primary-text-color;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        // opacity: 0.75;
-        color: black;
-    }
-}
-
-.navbar__brand {
-    opacity: 0.50;
 }
 
 

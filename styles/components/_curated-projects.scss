@@ -4,8 +4,12 @@
 
 }
 
-.intro__link {
-    text-decoration: underline;
+.intro__link  {
+    opacity: 0.50;
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1;
+    }
 }
 .intro__text {
     @include text-lg;

@@ -54,14 +54,6 @@ img {
 a, .navbar__link, .footer__link {
   text-decoration: none;
   color: hsl(225, 7%, 12%);
-  transition: all 0.2s ease-in-out;
-}
-a:hover, .navbar__link:hover, .footer__link:hover {
-  color: black;
-}
-
-.navbar__brand {
-  opacity: 0.5;
 }
 
 h1 {
@@ -128,6 +120,14 @@ h1.curated-project__title {
   .navbar, .sidebar-header {
     padding-top: 100px;
   }
+}
+
+.navbar__link {
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+.navbar__link:hover {
+  opacity: 1;
 }
 
 .sidebar__button {
@@ -434,7 +434,11 @@ h1.curated-project__title {
 }
 
 .intro__link {
-  text-decoration: underline;
+  opacity: 0.5;
+  transition: opacity 0.4s ease;
+}
+.intro__link:hover {
+  opacity: 1;
 }
 
 .intro__text {
@@ -585,7 +589,8 @@ h1.curated-project__title {
   /* identical to box height, or 217% */
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  border-bottom: hsl(225, 7%, 12%) 1px solid;
+  color: #656565;
+  border-bottom: #DCDCDC 1px solid;
 }
 @media (max-width: 640px) {
   .project__overview h2 {
@@ -619,7 +624,7 @@ h1.curated-project__title {
     margin: 40px 0;
   }
 }
-.project__pitch p, .project__context p, .project__skillset p {
+.project__pitch p, .project__pitch ul, .project__context p, .project__context ul, .project__skillset p, .project__skillset ul {
   margin-top: 30px;
   margin-bottom: 0;
 }
