@@ -22,8 +22,8 @@
 .project__overview h2 {
     @include text-xs;
     text-transform: uppercase;
-    color: #656565;
-    border-bottom: #DCDCDC 1px solid;
+    color: $accent-color;
+    border-bottom: $accent-color-lighter 1px solid;
 
 
 }

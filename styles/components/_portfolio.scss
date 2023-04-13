@@ -66,7 +66,7 @@
 
 .desktop-portfolio__label {
     @include text-xs;
-    color: #656565;
+    color: $accent-color;
     border-top: none!important;
     text-transform: uppercase;
     @include for-tablet-landscape-up {
@@ -75,7 +75,7 @@
 }
 
 .desktop-portfolio td, .desktop-portfolio th {
-    border-top: 1px solid #DCDCDC;
+    border-top: 1px solid $accent-color-lighter;
     text-align: left;
     // position: relative;
     @include for-tablet-landscape-up {
@@ -86,12 +86,21 @@
 .desktop-portfolio__item {
     position: relative;
     flex: 1;
+    transition: opacity 0.4s ease;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    &:not(:hover) {
+        opacity: 0.6;
+    }
 }
 
 
 .desktop-portfolio__title {
     @include text-lg;
-    border-top: 1px solid #DCDCDC;
+    border-top: 1px solid $accent-color-lighter;
     // @include for-tablet-landscape-up {
     // & a {
     //     position: relative;

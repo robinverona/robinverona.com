@@ -50,7 +50,7 @@
     }
     @include for-tablet-portrait-up {
         width: 100%;
-        border-bottom: #DCDCDC solid 1px;
+        border-bottom: $accent-color-lighter solid 1px;
         position: absolute;
         top: 35px; // TODO: fix this position when the footer is done (spacings)
     }
@@ -67,9 +67,9 @@
 .footer__label {
     @include text-xs;
     text-transform: uppercase;
-    border-bottom: #DCDCDC 1px solid;
+    border-bottom: $accent-color-lighter 1px solid;
     padding-bottom: $spacing-separator;
-    color: #656565;
+    color: $accent-color;
 
     @include for-tablet-portrait-up {
         border-bottom: none;

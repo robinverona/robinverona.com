@@ -46,8 +46,8 @@
 
 .curated-projects__image {
     backface-visibility: hidden;
-    border-radius: 4px;
-    background-color: #DCDCDC;
+    // border-radius: 4px;
+    background-color: $accent-color-lighter;
     /* Remove Image flickering on hover */
     // visibility: hidden;
 
@@ -55,7 +55,7 @@
 
 .curated-projects__overlay-title {
     @include text-lg;
-    border-bottom: #DCDCDC 1px solid;
+    border-bottom: $accent-color-lighter 1px solid;
     padding-top: 50px;
     padding-bottom: 20px;
     margin: 0;

@@ -18,6 +18,9 @@ $secondary-background-color: $dark;
 $primary-text-color: $dark;
 $secondary-text-color : $light;
 
+$accent-color: rgba(#1C1D20, 0.5);
+$accent-color-lighter: rgba(#1C1D20, 0.3);
+
 
 // TODO: Investigate why this is not working
 // $primary-text-color: dynamic-color(primary-background-color);
@@ -272,5 +275,5 @@ h1.curated-project__title {
   
   /* [3] Finally, transforming the image when container gets hovered */
   .img-hover-zoom:hover img {
-    transform: scale(1.1);
+    transform: scale(1.4);
   }

@@ -42,9 +42,9 @@
 .about .details__title, .details__label, .skills__title {
     @include text-xs;
     text-transform: uppercase;
-    border-bottom: #DCDCDC 1px solid;
+    border-bottom: $accent-color-lighter 1px solid;
     padding-bottom: 24px;
-    color: #656565;
+    color: $accent-color;
 
 }
 
