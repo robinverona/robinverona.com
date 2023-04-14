@@ -12,7 +12,7 @@
     }
 }
 .intro__text {
-    @include text-lg;
+    @include text-base;
     @include for-tablet-portrait-up {
         max-width: 800px;
     }

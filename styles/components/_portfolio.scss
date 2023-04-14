@@ -88,13 +88,13 @@
     flex: 1;
     transition: opacity 0.4s ease;
 
-    &:hover{
-        opacity: 1;
-    }
+    // &:hover > &:hover{
+    //     opacity: 1;
+    // }
 
-    &:not(:hover) {
-        opacity: 0.6;
-    }
+    // &:not(:hover) {
+    //     opacity: 0.5;
+    // }
 }
 
 

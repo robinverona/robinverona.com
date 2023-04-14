@@ -46,21 +46,3 @@ mobileMenuButton.addEventListener('click', () => {
   })
 
 
-
-  // const items = document.querySelectorAll('.desktop-portfolio__item')
-  // console.log(items);
-  // items.forEach((el) => {
-  //   const image = el.querySelector('.desktop-portfolio__image')
-    
-  //   el.addEventListener('mouseenter', (e) => {
-  //     gsap.to(image, { autoAlpha: 1 })
-  //   })
-    
-  //    el.addEventListener('mouseleave', (e) => {
-  //     gsap.to(image, { autoAlpha: 0 })
-  //   })
-    
-  //   el.addEventListener('mousemove', (e) => {
-  //     gsap.set(image, { x: e.offsetX - 200 })
-  //   })
-  // })

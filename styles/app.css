@@ -90,12 +90,12 @@ h1.curated-project__title {
 
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
-  transform: scale(1.4);
+  transform: scale(1.15);
 }
 
 .navbar, .sidebar-header {
@@ -444,14 +444,14 @@ h1.curated-project__title {
 .intro__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 29px;
   letter-spacing: -0.03em;
 }
 @media (max-width: 640px) {
   .intro__text {
-    font-size: 24px;
-    line-height: 29.05px;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 @media (min-width: 640px) {
@@ -769,12 +769,6 @@ h1.curated-project__title {
   position: relative;
   flex: 1;
   transition: opacity 0.4s ease;
-}
-.desktop-portfolio__item:hover {
-  opacity: 1;
-}
-.desktop-portfolio__item:not(:hover) {
-  opacity: 0.6;
 }
 
 .desktop-portfolio__title {
